@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.expenseorganizer.Entities.ItemCategory
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ItemCategoryDao {
@@ -11,5 +12,5 @@ interface ItemCategoryDao {
     suspend fun insert(itemCategory: ItemCategory)
 
     @Query("SELECT * FROM item_category")
-    suspend fun getAllCategories(): List<ItemCategory>
+    fun getAllCategories(): Flow<List<ItemCategory>>
 }

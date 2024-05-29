@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.expenseorganizer.Entities.ExpenseRecord
+import kotlinx.coroutines.flow.Flow
 
 
 @Dao
@@ -12,5 +13,5 @@ interface ExpenseRecordDao {
     suspend fun insert(expenseRecord: ExpenseRecord)
 
     @Query("SELECT * FROM expense_record")
-    suspend fun getAllExpenseRecords(): List<ExpenseRecord>
+    fun getAllExpenseRecords(): Flow<List<ExpenseRecord>>
 }
