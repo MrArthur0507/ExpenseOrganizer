@@ -3,7 +3,7 @@ package com.example.expenseorganizer.DAO
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.example.expenseorganizer.Entities.ItemCategory
+import com.example.expenseorganizer.entities.ItemCategory
 import kotlinx.coroutines.flow.Flow
 
 @Dao

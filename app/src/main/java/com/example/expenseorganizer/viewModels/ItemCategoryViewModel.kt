@@ -1,9 +1,9 @@
-package com.example.expenseorganizer.ViewModels
+package com.example.expenseorganizer.viewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.expenseorganizer.Entities.ItemCategory
+import com.example.expenseorganizer.entities.ItemCategory
 import com.example.expenseorganizer.Repositories.ItemCategoryRepository
 import kotlinx.coroutines.launch
 

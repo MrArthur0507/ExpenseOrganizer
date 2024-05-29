@@ -1,7 +1,7 @@
 package com.example.expenseorganizer.Repositories
 
 import com.example.expenseorganizer.DAO.ItemCategoryDao
-import com.example.expenseorganizer.Entities.ItemCategory
+import com.example.expenseorganizer.entities.ItemCategory
 import kotlinx.coroutines.flow.Flow
 
 class ItemCategoryRepository(private val itemCategoryDao: ItemCategoryDao) {

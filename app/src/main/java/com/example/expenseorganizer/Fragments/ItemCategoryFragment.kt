@@ -11,10 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expenseorganizer.Adapters.ItemCategoryAdapter
 import com.example.expenseorganizer.Db.ExpenseTrackerApp
-import com.example.expenseorganizer.Entities.ItemCategory
 import com.example.expenseorganizer.Factory.ItemCategoryViewModelFactory
 import com.example.expenseorganizer.R
-import com.example.expenseorganizer.ViewModels.ItemCategoryViewModel
+import com.example.expenseorganizer.viewModels.ItemCategoryViewModel
 
 class ItemCategoryFragment : Fragment() {
 

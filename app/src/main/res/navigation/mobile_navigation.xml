@@ -13,6 +13,15 @@
         <action
             android:id="@+id/action_nav_home_to_itemCategoryFragment"
             app:destination="@id/nav_category" />
+        <action
+            android:id="@+id/action_nav_home_to_expenseRecordFragment"
+            app:destination="@id/nav_expenseRecordFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_profitListFragment"
+            app:destination="@id/nav_profitListFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_addProfitFragment"
+            app:destination="@id/nav_addProfitFragment" />
     </fragment>
 
     <fragment
@@ -24,5 +33,34 @@
         android:id="@+id/nav_category"
         android:name="com.example.expenseorganizer.Fragments.ItemCategoryFragment"
         android:label="fragment_item_category2"
-        tools:layout="@layout/fragment_item_category2" />
+        tools:layout="@layout/fragment_item_category2" >
+        <action
+            android:id="@+id/action_nav_category_to_addItemCategoryFragment"
+            app:destination="@id/nav_add_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_category"
+        android:name="com.example.expenseorganizer.Fragments.AddItemCategoryFragment"
+        android:label="fragment_add_item_category"
+        tools:layout="@layout/fragment_add_item_category" />
+    <fragment
+        android:id="@+id/nav_expenseRecordFragment"
+        android:name="com.example.expenseorganizer.Fragments.ExpenseRecordFragment"
+        android:label="ExpenseRecordFragment" >
+        <action
+            android:id="@+id/action_expenseRecordFragment_to_addExpenseRecordFragment"
+            app:destination="@id/nav_addExpenseRecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addExpenseRecordFragment"
+        android:name="com.example.expenseorganizer.Fragments.AddExpenseRecordFragment"
+        android:label="AddExpenseRecordFragment" />
+    <fragment
+        android:id="@+id/nav_profitListFragment"
+        android:name="com.example.expenseorganizer.Fragments.ProfitListFragment"
+        android:label="ProfitListFragment" />
+    <fragment
+        android:id="@+id/nav_addProfitFragment"
+        android:name="com.example.expenseorganizer.Fragments.AddProfitFragment"
+        android:label="AddProfitFragment" />
 </navigation>

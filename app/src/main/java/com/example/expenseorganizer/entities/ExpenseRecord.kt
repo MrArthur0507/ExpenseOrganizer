@@ -1,4 +1,4 @@
-package com.example.expenseorganizer.Entities
+package com.example.expenseorganizer.entities
 
 import androidx.room.Entity
 import androidx.room.ForeignKey

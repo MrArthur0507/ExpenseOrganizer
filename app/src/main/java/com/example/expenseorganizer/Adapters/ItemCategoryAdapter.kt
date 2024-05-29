@@ -3,7 +3,7 @@ package com.example.expenseorganizer.Adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.expenseorganizer.Entities.ItemCategory
+import com.example.expenseorganizer.entities.ItemCategory
 import com.example.expenseorganizer.databinding.ItemCategoryBinding
 
 class ItemCategoryAdapter : RecyclerView.Adapter<ItemCategoryAdapter.ItemCategoryViewHolder>() {

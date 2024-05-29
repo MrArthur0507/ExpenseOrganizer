@@ -3,7 +3,7 @@ package com.example.expenseorganizer.Factory
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.expenseorganizer.Repositories.ItemCategoryRepository
-import com.example.expenseorganizer.ViewModels.ItemCategoryViewModel
+import com.example.expenseorganizer.viewModels.ItemCategoryViewModel
 
 
 class ItemCategoryViewModelFactory(private val repository: ItemCategoryRepository): ViewModelProvider.Factory{
